@@ -14,8 +14,8 @@ public class Lab3 {
 		
 		String cont = "y"; // to control loop process
 		int num = 0;
-		int squaredNum = 0;
-		int cubedNum = 0;
+		long squaredNum = 0;
+		long cubedNum = 0;
 
 		while (cont.equalsIgnoreCase("y")) {     // to pass lowe or upper case letter
 			System.out.println("Enter an integer: ");
@@ -25,8 +25,8 @@ public class Lab3 {
 			System.out.println("======		=======		=====");
 			// generte numbers from 1 till reach input number
 			for (int i = 1; i <= num; ++i) {
-				squaredNum = i * i;
-				cubedNum = i * i * i;
+				squaredNum = (long) Math.pow(i,2);
+				cubedNum =  (long) Math.pow(i,3);
 				System.out.println(i + "\t\t" + squaredNum + "\t\t" + cubedNum);
 			}
 
